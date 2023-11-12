@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Konversi Bilangan</title>
+    <style>
+
+        .calculator {
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 70px;
+            height: 70px;
+            font-size: 18px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="binaryInput" placeholder="Masukkan bilangan biner">
+        <button onclick="convertToDecimal()">Ke Desimal</button>
+        <button onclick="convertToOctal()">Ke Oktal</button>
+        <button onclick="convertToHexadecimal()">Ke Heksadesimal</button>
+        <div>
+            <strong>Hasil:</strong>
+            <span id="result"></span>
+        </div>
+    </div>
+
+    <script>
+        function convertToDecimal() {
+            const binaryInput = document.getElementById('binaryInput').value;
+            const decimalResult = parseInt(binaryInput, 2);
+            document.getElementById('result').textContent = decimalResult;
+        }
+
+        function convertToOctal() {
+            const binaryInput = document.getElementById('binaryInput').value;
+            const octalResult = parseInt(binaryInput, 2).toString(8);
+            document.getElementById('result').textContent = octalResult;
+        }
+
+        function convertToHexadecimal() {
+            const binaryInput = document.getElementById('binaryInput').value;
+            const hexadecimalResult = parseInt(binaryInput, 2).toString(16).toUpperCase();
+            document.getElementById('result').textContent = hexadecimalResult;
+        }
+    </script>
+    
+</body>
+</html>
