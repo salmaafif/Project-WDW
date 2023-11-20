@@ -1,0 +1,41 @@
+.body{
+    background-color: #f4fdff;
+}
+.kotak{
+    width: 1300px;
+    height: 586px;
+    background-color: #f4fdff;
+}
+.buttonhome{
+    height: 50px;
+    width: 175px;
+    border: #05204A solid 5px;
+    border-radius: 0px;
+}
+.buttonhome:hover{
+    background-color: #415d88;
+    border: white solid 5px;
+    border-radius: 0px;
+}
+.teks{
+    text-decoration: none; 
+    color: #05204a; 
+    font-size: 20px; 
+    margin: auto;
+}
+.teks:hover{
+    text-decoration: none; 
+    color: white; 
+    font-size: 20px; 
+    margin: auto;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #6F8695;
+    color: white;
+    width: 100%;
+}
+section{
+    padding-top: 5rem;
+}
